@@ -9,7 +9,7 @@ image 'python:3.7.2'
     stages {
         stage('build') {
             steps {
-                sh ' pip3 install -r requirements.txt --user'
+                sh ' pip3 install flask --user'
             }
         }
         stage('test') {
