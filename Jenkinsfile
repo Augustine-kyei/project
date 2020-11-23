@@ -9,12 +9,12 @@ image 'python:3.7.2'
     stages {
         stage('build') {
             steps {
-                sh 'sudo pip install flask'
+                sh 'pip install flask'
             }
         }
         stage('test') {
             steps {
-                sh 'sudo python test.py'
+                sh ' python test.py'
             }
             post {
                 always {junit 'test-reports/*.xml'}
