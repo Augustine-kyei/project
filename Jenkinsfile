@@ -9,7 +9,7 @@ image 'python:3.7.2'
     stages {
         stage('build') {
             steps {
-                sh 'sudo pip install -r requirements.txt'
+                sh ' pip3 install -r requirements.txt --user'
             }
         }
         stage('test') {
