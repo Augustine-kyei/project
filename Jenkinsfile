@@ -1,5 +1,5 @@
 pipeline {
-    agent { 
+    agent { sudo
 docker { 
 image 'python:3.7.2' 
 
