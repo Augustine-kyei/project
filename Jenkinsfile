@@ -9,8 +9,7 @@ image 'python:3.7.2'
     stages {
         stage('build') {
             steps {
-                sh 'sudo apt install python-pip'
-                sh 'sudo apt install python-flask'
+                sh 'pip install -r requirements.txt'
             }
         }
         stage('test') {
